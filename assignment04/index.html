@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Magic Garden</title>
+    <script src="../p5/p5.min.js"></script>
+    <script src="../p5/addons/p5.dom.min.js"></script>
+    <script src="../p5/addons/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+  </head>
+
+  <body>
+
+    <h1>Magic Garden</h1>
+
+    <div>
+        <h3>Design Process:</h3>
+        <p>The design process for me was essentially figuring out how to create this game step by step.</p>
+        <p>I realized early on that utilizing object states were going to be extremely useful, and essentially took it from there!</p>
+        <p>I created states for each phase of the flower growing process (falling, expanding, growing, blossoming, etc.)</p>
+        <p>and also created functions that would be called in those specific states (eg. drop, rotate, grow), to display the growth changes.</p>
+    </div>
+    
+  </body>
+
+  <style>
+  
+    h1, h3{
+      text-align: center;
+      color: white;
+    }
+
+    body{
+      background-color: black;
+      font: white;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+
+    div{
+      text-align: center;
+      margin: 30px;
+    }
+
+    p{
+      color: white;
+    }
+  
+  </style>
+
+</html>
