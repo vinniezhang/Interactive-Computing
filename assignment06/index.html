@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+
+		<!-- p5 libraries -->
+		<script src="../p5/p5.min.js"></script>
+		<script src="../p5/addons/p5.dom.min.js"></script>
+		<script src="../p5/addons/p5.sound.min.js"></script> 
+
+		<!-- P5 libraries -->
+		<script language="javascript" type="text/javascript" src="./libraries/p5.min.js"></script>
+
+		<!-- A-Frame libraries -->
+		<script language="javascript" type="text/javascript" src="./libraries/aframe.min.js"></script>
+
+		<!-- AFrameP5 library -->
+		<script language="javascript" type="text/javascript" src="./libraries/aframep5.js"></script>
+
+		<!-- P5 Sketch -->
+		<script language="javascript" type="text/javascript" src="sketch.js"></script>
+
+		<!-- custom styles -->
+		<style>
+			body {
+				padding: 0;
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+
+		<!-- container to hold our VR scene - make sure to give this element an ID of 'VRScene' -->
+	    <a-scene id="VRScene">
+
+			<a-assets id="VRAssets">
+
+				<!-- space background -->
+				<img src="images/sky1.jpeg" id="sky1">
+				
+				<!-- textures for planets/asteroids -->
+                <img src="images/stonebrick_cracked.png" id="rock">
+                <img src="images/water.bmp" id="water">
+                <img src="images/fire.jpg" id="fire">
+				<img src="images/craters.jpg" id="crater">
+
+				<!-- space shuttle -->
+				<img id="shuttle" src="images/shuttle/SpaceShuttle_BaseColor.png">
+				<a-asset id="shuttleobj" src="images/shuttle/SpaceShuttle.obj"/>
+				<a-asset id="shuttlemtl" src="images/shuttle/SpaceShuttle.mtl">
+
+				<!-- astronaut -->
+				<img id="astro" src="images/astronaut/Astronaut_BaseColor.png">
+				<a-asset id="astroobj" src="images/astronaut/Astronaut.obj"/>
+				<a-asset id="astromtl" src="images/astronaut/Astronaut.mtl">
+				
+				<!-- Flying Saucer -->
+				<img id="saucer" src="images/saucer/fying_saucerSurface_Color.png">
+				<a-asset id="saucerobj" src="images/saucer/saucer.obj">
+				<a-asset id="saucermtl" src="images/saucer/saucer.mtl">
+
+            </a-assets>
+            
+            <!-- outer space background img -->
+			<a-sky id="theSky" src="#sky1" color="rgb(255,255,255)"></a-sky>
+
+	    </a-scene>
+
+	</body>
+</html>
