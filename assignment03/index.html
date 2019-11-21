@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="../p5/p5.min.js"></script>
+    <script src="../p5/addons/p5.dom.min.js"></script>
+    <script src="../p5/addons/p5.sound.min.js"></script>
+    
+    <script src="sketch.js"></script>
+
+  </head>
+
+  <body>
+
+      <div>
+        <h1>TRASH COLLECTOR</h1>
+        <h3>Help fight climate change by collecting trash and the politicians who will try to stop you!</h3>
+      </div>
+
+      <div id="outer">
+        <h4>Directions:</h4>
+        <div id="direct">
+          <li> Use the A and D keys to move left and right.</li></br>
+          <li> Each item collected earns 5 pts, and any missed item will cost a life! 100 pts to win.</li></br>
+          <li> Catching Donald Trump will earn you double points, but Greta Thunberg should be left alone!</li></br></br>
+        </div>
+      </div>
+
+      <div>
+          <b>Control User Speed:</b></br></br>
+          <input type="range" id="range1" min="1" max="8" step="1" value="4" oninput="updateSpeed(this)"; onchange="updateSpeed(this);">
+      </div>
+      </br>
+
+      <footer><a href="http://i6.cims.nyu.edu/~pac446/interactive/assignment3/assignment03.html"> Click here to view the documentation for the in-class lab! </a></footer>
+  </body>
+
+  <style>
+
+      h1{
+        font-size: 30px;
+        text-shadow: #995e15 2px 1px;
+        padding-top: 25px;
+      }
+
+      footer {
+        padding: 20px;
+        text-align: center;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      p {
+        color: #c97030;
+      }
+
+      #direct {
+        text-align: center;
+        width: 100%;
+      }
+
+      #outer{
+        text-align: center;
+        margin: auto;
+      }
+
+      body{
+        background-color: #78de93;
+        text-align: center;
+        font-family: 'Arial';
+        color: #d97732;
+        padding-bottom: 60px;
+      }
+
+  </style>
+
+</html>
